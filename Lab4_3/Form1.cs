@@ -75,7 +75,7 @@ namespace Lab4_3
             {
                 WebClient myClient = new WebClient();
                 string url = addressBar.Text; // Lấy URL từ thanh địa chỉ
-                string filePath = "D:\\MyWeb\\MyDownLoadHTML.html"; // Đường dẫn lưu tệp
+                string filePath = "D:\\clonecode\\Lab4_3_NT106\\Lab4_3\\bin\\Debug\\MyWeb\\MyDownLoadHTML.html"; // Đường dẫn lưu tệp
 
                 // Tải xuống và lưu tệp HTML
                 myClient.DownloadFile(url, filePath);
@@ -93,7 +93,7 @@ private void downRButton_Click(object sender, EventArgs e)
         try
         {
             string url = addressBar.Text;
-            string saveDirectory = "D:\\MyWeb";
+            string saveDirectory = "D:\\clonecode\\Lab4_3_NT106\\Lab4_3\\bin\\Debug\\MyWeb";
 
             // Tạo thư mục nếu chưa tồn tại
             if (!Directory.Exists(saveDirectory))
